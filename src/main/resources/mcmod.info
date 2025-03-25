@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "mcheli",
+  "name": "MCHeli Overdrive",
+  "description": "Cursedly modified version of MCHeli Overdrive",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["DerKaiser2023"], ["RageXPrincess683"],
+  "credits": "RageXPrincess683",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
