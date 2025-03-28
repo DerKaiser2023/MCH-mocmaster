@@ -27,7 +27,6 @@ public class MCH_Achievement {
    public static Achievement reliefSupplies = null;
    public static Achievement rideValkyries = null;
 
-
    public static void PreInit() {
       Item item = getAnyAircraftIcon("ah-64");
       boolean BC = true;
@@ -35,28 +34,41 @@ public class MCH_Achievement {
       String name = "McHeliWelcome";
       welcome = W_Achievement.registerAchievement("mcheli" + name, name, 1, 1, item, (Achievement)null);
       W_LanguageRegistry.addNameForObject(welcome, "en_US", "Welcome to MC Helicopter MOD", name, "Put the helicopter");
+      W_LanguageRegistry.addNameForObject(welcome, "de_DE", "Willkommen bei MC Helicopter MOD", name, "Stelle den Hubschrauber auf");
+
       name = "McHeliSupplyFuel";
       supplyFuel = W_Achievement.registerAchievement("mcheli" + name, name, -1, 1, MCH_MOD.itemFuel, (Achievement)null);
       W_LanguageRegistry.addNameForObject(supplyFuel, "en_US", "Refueling", name, "Refuel aircraft");
+      W_LanguageRegistry.addNameForObject(supplyFuel, "de_DE", "Betankung", name, "Flugzeug betanken");
+
       item = getAircraftIcon("ammo_box");
       name = "McHeliSupplyAmmo";
       supplyAmmo = W_Achievement.registerAchievement("mcheli" + name, name, 3, 1, item, (Achievement)null);
       W_LanguageRegistry.addNameForObject(supplyAmmo, "en_US", "Supply ammo", name, "Supply ammo to the aircraft");
+      W_LanguageRegistry.addNameForObject(supplyAmmo, "de_DE", "Munition liefern", name, "Munition an das Flugzeug liefern");
+
       item = getAircraftIcon("uh-1c");
       name = "McHeliRideValkyries";
       rideValkyries = W_Achievement.registerAchievement("mcheli" + name, name, -1, 3, item, (Achievement)null);
       W_LanguageRegistry.addNameForObject(rideValkyries, "en_US", "Ride Of The Valkyries", name, "?");
+      W_LanguageRegistry.addNameForObject(rideValkyries, "de_DE", "Ritt der Walküren", name, "?");
+
       item = getAircraftIcon("mh-60l_dap");
       name = "McHeliAintWarHell";
       aintWarHell = W_Achievement.registerAchievement("mcheli" + name, name, 3, 3, item, (Achievement)null);
-      W_LanguageRegistry.addNameForObject(aintWarHell, "en_US", "Ain\'t war hell?", name, "?");
+      W_LanguageRegistry.addNameForObject(aintWarHell, "en_US", "Ain't war hell?", name, "?");
+      W_LanguageRegistry.addNameForObject(aintWarHell, "de_DE", "Ist Krieg nicht die Hölle?", name, "?");
+
       MCH_ItemContainer item1 = MCH_MOD.itemContainer;
       name = "McHeliReliefSupplies";
       reliefSupplies = W_Achievement.registerAchievement("mcheli" + name, name, -1, -1, item1, (Achievement)null);
       W_LanguageRegistry.addNameForObject(reliefSupplies, "en_US", "Relief supplies", name, "Drop a container");
+      W_LanguageRegistry.addNameForObject(reliefSupplies, "de_DE", "Hilfsgüter", name, "Einen Container abwerfen");
+
       Achievement[] achievements = new Achievement[]{welcome, supplyFuel, supplyAmmo, aintWarHell, rideValkyries, reliefSupplies};
       AchievementPage.registerAchievementPage(new AchievementPage("MC Helicopter", achievements));
    }
+}
 
    public static Item getAircraftIcon(String defaultIconAircraft) {
       Item item = W_Item.getItemByName("stone");
