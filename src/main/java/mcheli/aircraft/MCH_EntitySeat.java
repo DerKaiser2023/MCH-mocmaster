@@ -198,11 +198,11 @@ public class MCH_EntitySeat extends W_Entity {
             if(itemStack != null && itemStack.getItem() instanceof MCH_ItemWrench) {
                return this.getParent().interactFirst(player);
             } else if(super.riddenByEntity != null) {
-               return false;
+               return false; // Already occupied
             } else if(player.ridingEntity != null) {
-               return false;
-            } else if(!this.canRideMob(player)) {
-               return false;
+               return false; // Player is already riding something
+            } else if(!this.canRideMob(player) && !(player instanceof CustomNPC_Entity)) {
+               return false; // Should hopefully allow CustomNPCs to mount vehicles
             } else {
                player.mountEntity(this);
                return true;
