@@ -1,6 +1,6 @@
 # MCH-mocmaster
 
-This repository is meant to enhance the mcheli minecraft mod far beyond what it is capable of. Any and all help would be resourceful. This is a derivative of the source code found [[here](https://github.com/RagexPrince683/MCH-defaultmaster)] 
+This repository is meant to turn the base mod of mcheli overdrive into a pile of flaming garbage since thats the only thing somehow do. please dont really ask for help, i know what the fuck im doing. This is a derivative of the source code found [[here](https://github.com/RagexPrince683/MCH-mocmaster)] 
 
 # NOTICE: this flaming garbage is somehow still in development
    
@@ -33,3 +33,5 @@ open gradle console you should see gradle and then a bunch of things, then you w
 build
 
 then if all goes well go to build/libs and a java file will be there. If you have made edits to the src you want to open the jar file with a archiver tool such as winrar. You can put this compiled class code into mcheli/mcheli in a actual mcheli instance/folder/the yknow mod and test things out yourself. If you want to make sure there are no errors just copy and paste over the mcheli/mcheli with this stuff.
+
+this project is eating me from the inside
