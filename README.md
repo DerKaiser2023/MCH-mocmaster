@@ -1,9 +1,12 @@
 # MCH-mocmaster
 
-This repository is meant to turn the base mod of mcheli overdrive into a pile of flaming garbage since thats the only thing somehow do. please dont really ask for help, i know what the fuck im doing. This is a derivative of the source code found [[here](https://github.com/RagexPrince683/MCH-mocmaster)] 
+This repository is meant to turn the base mod of mcheli overdrive into a pile of flaming garbage since thats the only thing somehow do. please dont really ask for help, i know what the fuck im doing. The is a derivative of the source code can be found [[here](https://github.com/RagexPrince683/MCH-mocmaster)] 
 
 # NOTICE: this flaming garbage is somehow still in development
-   
+
+# setup by @RagexPrince683
+- i will do my own setup possibly
+  
 I use and set this up with intellij
 
 you need jdk-8u361-windows and if your on 64x 64x 32 for 32.
